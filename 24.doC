@@ -1,0 +1,23 @@
+#include<conio.h>
+#include<stdio.h>
+void main()
+{
+int a=30;
+int *p;
+int **ptr;
+clrscr();
+p=&a;
+ptr=&p;
+printf("a=%d\n",a);
+printf("*p=%d\n",*p);
+printf("**ptr=%d\n",**ptr);
+printf("add. of a=%x\n",&a);
+printf("add. of *p=%x\n",&*p);//same as p
+printf("add. of **ptr=%x\n",ptr);//same as &**ptr
+getch();
+}
+//output
+//a=30
+//*p=30
+//**ptr=30
+//add. of ...

@@ -1,0 +1,18 @@
+void main()
+{
+int a,b,c;
+int *pa,*pb;
+clrscr();
+printf("Enter two numbers:");
+scanf("%d %d",&a,&b);
+printf("Before swapping :%d %d\n",a,b);
+pa=&a;
+pb=&b;
+
+c=*pa;
+*pa=*pb;
+*pb=c;
+
+printf("After swaooing %d %d",*pa,*pb);
+getch();
+}

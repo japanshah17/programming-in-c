@@ -1,0 +1,13 @@
+void main()
+{
+int a,b;
+int *pa;
+int *pb;
+clrscr();
+printf("Enter A and B:");
+scanf("%d %d",&a,&b);
+pa=&a;
+pb=&b;
+printf("Addition is %d",*pa + *pb);
+getch();
+}

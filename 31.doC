@@ -1,0 +1,25 @@
+#include<conio.h>
+#include<stdio.h>
+
+int fact(int n) ;
+void main()
+{
+int ans,n,r;
+clrscr();
+printf("Enter n and r");
+scanf("%d %d",&n,&r);
+if(n<r)
+printf("N should be greater than r");
+else
+ans=fact(n)/(fact(n-r)*fact(r));
+printf("%d",ans);      ;
+getch();
+}
+
+int fact(int n)
+{
+if(n>=1)
+return n*fact(n-1);
+else
+return 1;
+}

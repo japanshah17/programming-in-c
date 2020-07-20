@@ -1,0 +1,52 @@
+#include<stdio.h>
+#include<conio.h>
+int swap(int a,int b);
+void main()
+{
+int a,b;
+clrscr();
+printf("enter a and b");
+scanf("%d %d",&a,&b);
+printf("before swapping a=%d b=%d\n",a,b);
+swap(a,b);
+printf("%d %d",&a,&b);
+getch();
+}
+
+int swap(int a,int b)
+{
+int c;
+c=a;
+a=b;
+b=c;
+printf("after swapping a=%d b=%d\n",a,b);
+}
+
+
+
+
+//call by refrence
+
+#include<stdio.h>
+#include<conio.h>
+int swap(int *a,int *b);
+void main()
+{
+int a,b;
+clrscr();
+printf("enter a and b");
+scanf("%d %d",&a,&b);
+printf("before swapping a=%d b=%d\n",a,b);
+swap(&a,&b);
+printf("after swapping a=%d b=%d\n",a,b);
+getch();
+}
+
+int swap(int *a,int *b)
+{
+int c;
+c=*a;
+*a=*b;
+*b=c;
+return;
+}

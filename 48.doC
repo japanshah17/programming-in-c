@@ -1,0 +1,38 @@
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void main()
+{
+    FILE *fp,*fp1;
+    int marks;
+    clrscr();
+    fp = fopen("new.txt", "r");
+
+    while(fp == NULL)
+    {
+	printf("Error opening file\n");
+	exit(1);
+    }
+
+    fp1= fopen("new1.txt", "w");
+
+    while(fp1 == NULL)
+    {
+	printf("Error opening file\n");
+	exit(1);
+    }
+   // printf("Testing fscanf() function: \n\n");
+   // printf("Marks\n");
+
+    if( fscanf(fp,"%d",&marks) != EOF )
+    {
+marks = fprintf(fp1, "%d\n",marks);
+	//printf("%d\n",marks);
+
+    }
+printf("copied");
+    fclose(fp);
+    fclose(fp1);
+    getch();
+}

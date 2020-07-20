@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+int main()
+{
+FILE *fp;
+char ch;
+clrscr();
+fp=fopen("def.txt","w");
+if(fp==NULL)
+{
+printf("not able to  create file:");
+exit(0);
+}
+printf("enter student details:");
+while((ch=getchar())!='\n')
+{
+putc(ch,fp);
+}
+fclose(fp);
+getch();
+}

@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+void main()
+{
+FILE *fp1, *fp2;
+char ch;
+int count=0;
+clrscr();
+fp1=fopen("abc.txt","r");
+fp1=fopen("def.txt","r");
+if(fp1==NULL)
+{
+printf("not able to  open file abc:");
+exit(0);
+}
+if(fp2==NULL)
+{
+printf("not able to open file def:");
+exit(0);
+}
+while((ch=getc(fp1))!=EOF)
+{
+count++;
+fputc(ch,fp2);
+}
+fclose(fp1);
+fclose(fp2);
+getch();
+}

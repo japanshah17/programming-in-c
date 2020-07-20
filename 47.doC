@@ -1,0 +1,29 @@
+#include <stdio.h>
+void main()
+{
+   char ch;
+   FILE *fp,*fp1;
+   clrscr();
+   fp = fopen("zzz.txt", "r");
+   if(fp==NULL)
+   {
+   printf("not opened zzz.txt");
+   }
+
+   fp1 =fopen("yyy.txt", "w");
+   if(fp1==NULL)
+   {
+   printf("not opened yyy.txt");
+   }
+     ch = getc(fp);
+     while (ch != EOF)
+     {
+       ch = getc(fp);
+       putc(ch,fp1);
+
+     }
+     printf("copied");
+      fclose(fp);
+      fclose(fp1);
+    getch();
+}

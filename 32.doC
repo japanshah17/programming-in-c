@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+int fibo(int n);
+void main()
+{
+int n,i,c=0;
+clrscr();
+printf("Enter the number of no. in seq.  :");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+{
+printf("%d\n",fibo(c));
+c++;
+}
+getch();
+}
+
+int fibo(int n)
+{
+if(n==0)
+return 0;
+else if(n==1)
+return 1;
+else
+return (fibo(n-1)+fibo(n-2));
+}

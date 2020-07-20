@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+struct student{
+int en;
+char name[50];
+int ps;
+int age;
+};
+void main()
+{
+struct student st;
+clrscr();
+printf("Enter enrollment number:\n");
+scanf("%d",&st.en);
+printf("Enter name:\n");
+scanf("%s",&st.name);
+printf("Enter percentage:\n");
+scanf("%d",&st.ps);
+printf("Enter age:");
+scanf("%d",&st.age);
+printf("%d\n",st.en);
+printf("%s\n",st.name);
+printf("%d\n",st.ps);
+printf("%d",st.age);
+getch();
+}
+

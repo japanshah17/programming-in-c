@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+#define PI 3.14
+void main()
+{
+int r;
+float area;
+clrscr();
+printf("Enter the radius:");
+scanf("%d",&r);
+area=PI*r*r;
+printf("%f",area);
+getch();
+}

@@ -1,0 +1,47 @@
+#include<stdio.h>
+#include<conio.h>
+#define A 20
+#define B 0
+void main()
+{
+clrscr();
+#if A
+printf("#if A: Defined and not 0\n");
+#else
+printf("#if A: Not defined or 0\n");
+#endif
+
+#if B
+printf("#if B: Defined and not 0\n");
+#else
+printf("#if B: Not defined or 0\n");
+#endif
+
+#ifdef A
+printf("#ifdef  A: Defined\n");
+#else
+printf("#ifdef  A: Not defined\n");
+#endif
+
+#ifdef B
+printf("#ifdef  B: Defined\n");
+#else
+printf("#ifdef  B: Not defined\n");
+#endif
+
+
+#ifndef A
+printf("#ifndef  A: Not defined\n");
+#else
+printf("#ifndef  A: Defined\n");
+#endif
+
+#ifndef B
+printf("#ifndef  B: Not defined\n");
+#else
+printf("#ifndef  B: Defined\n");
+#endif
+
+
+getch();
+}

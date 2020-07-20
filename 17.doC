@@ -1,0 +1,40 @@
+void main()
+{
+char str[10],str1[10];
+int len=0,len1=0,count=0,i,j;
+clrscr();
+printf("input a string:");
+scanf("%s",str);
+
+printf("input a string:");
+scanf("%s",str1);
+
+for(i=0;str[i]!='\0';i++)
+{
+len1++;
+}
+
+for(i=0;str1[i]!='\0';i++)
+{
+len++;
+}
+  if(len!=len1)
+  {
+  printf("not same");
+  }
+  else
+  {
+   for(i=0;i<len;i++)
+    {
+     if(str[i]==str1[i])
+      {
+	count++;
+      }
+      }
+      }
+    if(len==count) ;
+    printf("same");
+  //  else
+   // printf("not same");
+ getch();
+}

@@ -1,0 +1,77 @@
+int plus(int a, int b);
+void ad(int a, int b);
+void add(void);
+int sum(void);
+
+void main()
+{
+int a,b,i;
+clrscr();
+
+printf("1.Arguments and return values\n2.Arguments and no return value\n3.No argumetns no return values\n4.No argument return values\n");
+scanf("%d",&i);
+
+switch(i)
+ {
+ case 1:
+  {
+   plus(a,b);
+     break;
+  }
+  case 2:
+  {
+   ad(a,b);
+     break;
+  }
+  case 3:
+  {
+   add();
+     break;
+  }
+  case 4:
+  {
+   sum();
+     break;
+  }
+ }
+getch();
+}
+
+int plus(int a, int b)
+{
+int c;
+printf("Enter a and b:");
+scanf("%d %d",&a,&b);
+c=a+b;
+printf("%d",c);
+return c;
+}
+
+void ad(int a, int b)
+{
+int c;
+printf("Enter a and b:");
+scanf("%d %d",&a,&b);
+c=a+b;
+printf("%d",c);
+}
+
+void add(void)
+{
+int a,b,c;
+printf("Enter a and b:");
+scanf("%d %d",&a,&b);
+c=a+b;
+printf("%d",c);
+}
+
+int sum()
+{
+int a,b,c;
+
+printf("Enter a and b:");
+scanf("%d %d",&a,&b);
+c=a+b;
+printf("%d",c);
+return c;
+}

@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<conio.h>
+union student{
+int en;
+char name[50];
+int ps;
+int age;
+};
+void main()
+{
+union student st;
+int i;
+clrscr();
+printf("Enter enrollment number:\n");
+scanf("%d",&st.en);
+printf("Enter name:\n");
+scanf("%s",&st.name);
+printf("Enter percentage:\n");
+scanf("%d",&st.ps);
+printf("Enter age:");
+scanf("%d",&st.age);
+
+printf("What do you want to print?");
+printf("1.en\n2.name\n3.ps\n4.age");
+scanf("%d",&i);
+
+switch(i)
+{
+ case 1:
+	 printf("%d\n",st.en);
+	 break;
+ case 2:
+	 printf("%s\n",st.name);
+	 break;
+ case 3:
+	 printf("%d\n",st.ps);
+	 break;
+ case 4:
+	 printf("%d",st.age);
+	 break;
+}
+getch();
+
+}
+

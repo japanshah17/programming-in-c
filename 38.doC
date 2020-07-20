@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+struct student{
+int en;
+char name;
+int ps;
+};
+void main()
+{
+struct student st;
+
+struct student *ptr;
+
+
+clrscr();
+
+ptr=&st;
+
+printf("Enter enrollment number:\n");
+scanf("%d",&ptr->en);
+
+printf("Enter name:\n");
+scanf("%s",ptr->name);
+
+printf("Enter percentage:\n");
+scanf("%d",&ptr->ps);
+
+
+printf("%d\n",&ptr->en);
+
+printf("%s\n",ptr->name);
+
+printf("%d\n",&ptr->ps);
+
+
+
+getch();
+}

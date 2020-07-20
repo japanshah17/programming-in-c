@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+char str[10],str2[10];
+char *p;//ch=p;
+int a;
+clrscr();
+
+printf("input a string:");
+scanf("%s",str);
+
+printf("input second string:");
+scanf("%s",str2);
+strlwr(str);
+printf("string in lower is %s\n",str);
+strupr(str);
+printf("string in upper is %s\n",str);
+//p=strchr(str,ch);
+//printf("string starting from %c is %s",ch,p);
+p=strstr(str,str2);                              ;
+printf("The sub string %c is %s",p);
+getch();
+}

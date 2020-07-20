@@ -1,0 +1,20 @@
+
+void main()
+{
+char str[10],r[10];
+int len=0,i,j;
+clrscr();
+printf("input a string:");
+scanf("%s",str);
+//for(i=0;str[i]!='\0';i++)
+//{
+//len++;
+//}
+//for(i=len-1,j=0;i>=0;i--,j++)
+//{
+//r[i]=str[j];
+ //}
+
+printf("The reverse of string str is %s",strrev(str));
+getch();
+}

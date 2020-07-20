@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+char str[50],str2[50];
+int a;
+clrscr();
+printf("input a string:");
+scanf("%s",str);
+printf("length of str is %d\n",strlen(str));
+printf("input second string:");
+scanf("%s",str2);
+strcpy(str,str2);
+printf("copied string str is %s\n",str);
+a=strcmp(str,str2);
+if(a==0)
+{
+printf("same\n");
+}
+else
+{
+printf("Not same\n");
+}
+
+strcat(str,str2);
+printf("concated string str is %s\n",str);
+printf("reversed string is %s",strrev(str));
+getch();
+}

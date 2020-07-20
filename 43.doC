@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	FILE *fp;
+	char ch;
+	clrscr();
+	fp=fopen("abc.txt","r");
+	if(fp==NULL)
+	{
+		printf("File not found");
+		exit(0);
+	}
+	while((ch=getc(fp))!=EOF)
+	{
+		putchar(ch);
+	}
+	fclose(fp);
+	getch();
+}

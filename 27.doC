@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+int a,b,c;
+float d;
+clrscr();
+a=div(27,9); //returns 27/9
+printf("use of div() 27/9=%d\n",a);
+
+a=sqrt(4); // returns the square root.
+printf("use of sqrt() sqrt(4)=%d\n",a);
+
+printf("for use of pow() enter base and power:");
+scanf("%d %d",&b,&c);
+a=pow(b,c);    // b is base, c is exponent.
+printf("%d\n",a);
+
+printf("use of ceil() and floor() enter a float number:");
+scanf("%f",&d);
+a=ceil(d);  // returns nearest greater int.
+printf("%d\n",a);
+a=floor(d); // extra // retruns nearest smaller int.
+printf("%d\n",a);
+/*printf("use of round() enter a float number:");
+scanf("%f",&d);
+a=round(d);        // returns nearest int.
+printf("%d\n",a);
+printf("absolute of -10 is %d\n",abs(-10));*/ // returns absolute value.
+d=2.30;
+d=sin(d);     //returns sine value
+printf("%f\n",d);
+
+d=2.30; // returns cosine value
+d=cos(d);
+printf("%f\n",d);
+
+d=2.30;
+d=tan(d);     // returns tan value
+printf("%f\n",d);
+
+
+getch();
+}

@@ -1,0 +1,29 @@
+#include<conio.h>
+#include<stdio.h>
+#include<ctype.h>
+void main()
+{
+int i=0,a=0,b=0,c=0;
+char p[21];
+clrscr();
+printf("Enter a string:");
+scanf("%s",p);
+while(p[i]!='\0')
+{
+if(isalpha(p[i]))
+{
+a++;
+}
+if(isdigit(p[i]))
+{
+b++;
+}
+if(ispunct(p[i]))
+{
+c++;
+}
+i++;
+}
+printf(" alphabet %d\n number  %d\n special symbos %d\n",a,b,c);
+getch();
+}

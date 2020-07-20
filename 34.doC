@@ -1,0 +1,12 @@
+#include<conio.h>
+#include<stdio.h>
+#include<ctype.h>
+void main()
+{
+clrscr();
+printf("The current DATE is %s:   ",__DATE__);
+printf("\nThe current TIME is %s:   ",__TIME__);
+printf("\nThe current FILE is %s:   ",__FILE__);
+printf("\nThe current LINE is %d:   ",__LINE__);
+getch();
+}

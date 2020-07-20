@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<conio.h>
+struct salary{
+int basic;
+float HRA;
+float DA;
+float gross;
+};
+void main()
+{
+struct salary emp;
+clrscr();
+printf("Enter basic salary:\n");
+scanf("%d",&emp.basic);
+if(emp.basic<=1000)
+{
+emp.HRA=emp.basic*0.2;
+emp.DA=emp.basic*0.8;
+}
+
+else if(emp.basic<=2000)
+{
+emp.HRA=emp.basic*0.25;
+emp.DA=emp.basic*0.9;
+}
+else if(emp.basic>=2001)
+{
+emp.HRA=emp.basic*0.3;
+emp.DA=emp.basic*0.95;
+}
+emp.gross=emp.basic+emp.HRA+emp.DA;
+
+printf("basic salary is %d\n",emp.basic);
+printf("HRA is %f\n",emp.HRA);
+printf("DA is %f\n",emp.DA);
+printf("gross salary is %f",emp.gross);
+getch();
+}
+
